@@ -4,9 +4,7 @@
     <div class="question">
       <div class="card">
         <div class="card-body">
-          <h5>Question</h5>
-          <p>Ex1: Implement a Circle Calculator for users to enter a radius</p>
-          <p>After submission, calculate and output circumference and area</p>
+          <h5>EX 01: Calculator Area and Perimeter of Circle</h5>
         </div>
       </div>
     </div>
@@ -39,6 +37,7 @@
               min="1"
               placeholder="Please enter the radius"
               [(ngModel)]="radius"
+              (input)="handleAutoCal()"
             >
           </div>
 
@@ -49,7 +48,28 @@
       </div>
     </div>
     <!-- End Form Calculator -->
+      <!-- Start Display Question -->
+      <div class="question">
+        <div class="card">
+          <div class="card-body">
+            <h5>Ex02: Auto calculate Ex01</h5>
+          </div>
+        </div>
+      </div>
 
+      <!-- Start Display Cal -->
+      <div class="zone-display-cal">
+        <div class="card">
+          <div class="card-body">
+            <div class="mb-3">
+              <h4>Automatic calculation</h4>
+              <p>Perimeter: {{ auto_perimter }}</p>
+              <p>Area: {{ auto_area }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Display Cal -->
   </div>
 </div>
 
