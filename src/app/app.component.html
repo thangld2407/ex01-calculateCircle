@@ -1,0 +1,55 @@
+<div class="zone-app-component">
+  <div class="container">
+    <!-- Start Display Question -->
+    <div class="question">
+      <div class="card">
+        <div class="card-body">
+          <h5>Question</h5>
+          <p>Ex1: Implement a Circle Calculator for users to enter a radius</p>
+          <p>After submission, calculate and output circumference and area</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Display Question -->
+
+    <!-- Start Display Cal -->
+    <div class="zone-display-cal" *ngIf="isShow">
+      <div class="card">
+        <div class="card-body">
+          <div class="mb-3">
+            <p>Perimeter: {{ perimeter }}</p>
+            <p>Area: {{ area }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Display Cal -->
+
+    <!-- Start Form Calculator -->
+    <div class="zone-calculator">
+      <div class="card">
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="radius-input" class="form-label">Radius</label>
+            <input
+              type="number"
+              class="form-control"
+              name="radius-input"
+              id="radius-input"
+              min="1"
+              placeholder="Please enter the radius"
+              [(ngModel)]="radius"
+            >
+          </div>
+
+          <div class="mb-3">
+            <button class="btn btn-primary" (click)="handleCal()">Calculator</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Form Calculator -->
+
+  </div>
+</div>
+
