@@ -1,12 +1,13 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
-import { CircleCalculatorComponent } from './CircleCalculator.component';
+
+import {circle} from './circle.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [CircleCalculatorComponent],
-  bootstrap: [CircleCalculatorComponent]
+  declarations: [circle],
+  bootstrap: [circle]
 })
 export class AppModule {
 

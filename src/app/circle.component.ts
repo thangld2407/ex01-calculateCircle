@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-export class CircleCalculatorComponent {
+export class circle {
   radius:number = 1;
   perimeter:any = 0;
   area:any = 0;
